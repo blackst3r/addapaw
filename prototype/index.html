@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A homepage proposal for Add a Paw: pet portrait styles, a clear design-preview experience, and honest information about future physical prints.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="light">
+  <title>Add a Paw — A portrait all their own · Homepage proposal</title>
+  <style>
+    :root{--paper:#f7f3eb;--ink:#302c27;--muted:#6a6158;--rust:#8e422c;--line:#ddd4c6;--cream:#eee7d9;--white:#fffcf6}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:24px}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-underline-offset:4px}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--rust);outline-offset:5px}
+    .review-note{padding:9px 24px;text-align:center;background:#eae3d6;color:#514a41;font-size:12px;line-height:1.5}
+    .review-note strong{font-weight:650}
+    .wrap{width:min(1160px,calc(100% - 64px));margin:auto}
+    .site-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 0;border-bottom:1px solid var(--line)}
+    .brand{display:flex;gap:10px;align-items:center;font:bold 25px Georgia,serif;text-decoration:none;white-space:nowrap}
+    .brand svg{width:32px;height:32px;color:var(--rust)}
+    nav{display:flex;gap:30px;align-items:center;font-size:14px}
+    nav a{text-decoration:none}
+    nav a:hover{text-decoration:underline}
+    .preview-label{display:inline-flex;align-items:center;gap:8px;color:var(--rust);font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase}
+    .preview-label:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--rust)}
+    .hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:68px;padding:70px 0 80px}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.1}
+    h1{font-size:clamp(44px,5vw,66px);letter-spacing:-2.1px;margin:20px 0 24px}
+    h1 em{color:var(--rust);font-weight:400}
+    .intro{max-width:440px;font-size:17px;line-height:1.75;color:var(--muted);margin-bottom:25px}
+    .actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:52px;padding:13px 22px;background:var(--rust);color:#fff9f2;border:1px solid var(--rust);border-radius:5px;font-size:14px;font-weight:600;text-decoration:none}
+    .button:hover{background:#713322}
+    .text-link{font-size:14px;text-decoration:underline}
+    .honesty-note{max-width:420px;margin:17px 0 0;color:var(--muted);font-size:12px;line-height:1.6}
+    .gallery{position:relative;padding:0 0 45px 16px;isolation:isolate}
+    .gallery:before{position:absolute;z-index:-1;content:"";inset:28px -14px 13px 40px;border-radius:48% 48% 12px 12px;background:#e7dece}
+    .main-art{display:block;width:88%;height:auto;aspect-ratio:4/5;object-fit:cover;border:10px solid var(--white);box-shadow:0 16px 36px #4a382519;transform:rotate(-4deg)}
+    .gift-art{position:absolute;right:0;bottom:0;display:block;width:45%;aspect-ratio:1/1;object-fit:cover;border:7px solid var(--white);box-shadow:0 10px 26px #4a382524;transform:rotate(6deg)}
+    .art-caption{font-size:11px;color:var(--muted);margin:16px 0 0 16px;max-width:260px}
+    .promise{display:flex;gap:26px;justify-content:space-between;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0}
+    .promise p{margin:0;font-family:Georgia,serif;font-size:24px;line-height:1.3}
+    .promise span{font-size:13px;color:var(--muted);max-width:370px;line-height:1.7}
+    section{padding:70px 0}
+    .eyebrow{font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:var(--rust);font-weight:700;margin-bottom:15px}
+    h2{font-size:clamp(32px,3.5vw,43px);letter-spacing:-1px;margin-bottom:18px}
+    .section-intro{max-width:550px;color:var(--muted)}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:37px}
+    .step{border-top:1px solid var(--line);padding-top:20px}
+    .step-number{font-family:Georgia,serif;color:var(--rust);font-size:26px;display:block;margin-bottom:18px}
+    h3{font-size:25px;margin-bottom:12px}
+    .step p{font-size:14px;line-height:1.8;color:var(--muted);margin:0;max-width:300px}
+    .expectations{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;padding:40px;border:1px solid var(--line);background:var(--white);border-radius:10px}
+    .expectations p{color:var(--muted);font-size:14px}
+    .expectation-item+.expectation-item{margin-top:25px;border-top:1px solid var(--line);padding-top:25px}
+    .expectation-item h3{font-family:inherit;font-size:15px;font-weight:650;line-height:1.5;margin-bottom:7px}
+    .expectation-item p{margin:0}
+    .faq{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}
+    details{border-bottom:1px solid var(--line);padding:19px 0}
+    details:first-child{padding-top:0}
+    summary{cursor:pointer;font-size:15px;font-weight:600;line-height:1.5}
+    details p{font-size:14px;color:var(--muted);margin:14px 0 0;line-height:1.8}
+    .closing{padding:45px 0 60px;text-align:center;border-top:1px solid var(--line)}
+    .closing p{color:var(--muted);font-size:14px;margin-bottom:24px}
+    footer{display:flex;justify-content:space-between;gap:20px;padding:22px 0 30px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+    footer p{margin:0}
+    @media(max-width:800px){
+      .wrap{width:calc(100% - 40px)}
+      .site-header{padding:20px 0;gap:12px}
+      .brand{font-size:23px}
+      nav{gap:16px;font-size:12px}
+      nav .desktop-link{display:none}
+      .hero{grid-template-columns:1fr;gap:40px;padding:40px 0 48px}
+      h1{font-size:50px;max-width:530px;letter-spacing:-1.7px}
+      .intro{font-size:16px;max-width:520px}
+      .gallery{max-width:460px;width:100%;margin:0 auto;padding-right:14px}
+      .gallery:before{right:0}
+      .gift-art{right:8px}
+      .promise{align-items:flex-start;flex-direction:column;gap:12px}
+      .promise p{font-size:24px}
+      section{padding:48px 0}
+      .steps{grid-template-columns:1fr;gap:24px;margin-top:28px}
+      .step{display:grid;grid-template-columns:40px 1fr;column-gap:14px}
+      .step-number{grid-row:1/3;margin:0;font-size:24px}
+      .step h3{font-size:23px;margin-bottom:8px}
+      .step p{max-width:none}
+      .expectations{grid-template-columns:1fr;gap:20px;padding:26px 22px}
+      .faq{grid-template-columns:1fr;gap:12px}
+      .closing{padding:34px 0 44px}
+      footer{flex-direction:column;gap:7px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <aside class="review-note"><strong>Homepage proposal</strong> · Standalone copy and layout study. Style links open the existing Add a Paw website.</aside>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Add a Paw home">
+        <svg viewBox="0 0 36 36" aria-hidden="true" fill="currentColor"><ellipse cx="8" cy="13" rx="4" ry="5" transform="rotate(-25 8 13)"/><ellipse cx="16" cy="7" rx="4" ry="5"/><ellipse cx="25" cy="9" rx="4" ry="5" transform="rotate(22 25 9)"/><ellipse cx="30" cy="18" rx="3.6" ry="4.7" transform="rotate(35 30 18)"/><path d="M9 25c1-5 6-10 10-10s9 6 9 11c0 7-6 3-10 3s-10 4-9-4Z"/></svg>
+        Add a Paw
+      </a>
+      <nav aria-label="Main navigation"><a class="desktop-link" href="https://luna.nodesk.tech/themes">Portrait styles</a><a href="#how-it-works">How it works</a></nav>
+    </header>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <span class="preview-label">Design preview</span>
+          <h1 id="hero-title">Your favourite face.<br>A portrait <em>all their own.</em></h1>
+          <p class="intro">Turn a photo of your pet into a personalised portrait. Explore a look that feels like them, for your home or someone who loves theirs.</p>
+          <div class="actions"><a class="button" href="https://luna.nodesk.tech/themes">Explore portrait styles <span aria-hidden="true">↗</span></a><a class="text-link" href="#how-it-works">How it works</a></div>
+          <p class="honesty-note">Currently a design preview. Physical ordering is not open; print specifications, prices and delivery will be confirmed before it opens.</p>
+        </div>
+        <div>
+          <div class="gallery">
+            <img class="main-art" src="https://luna.nodesk.tech/brand/add-a-paw/hero-cat.webp" alt="Cat portrait example from Add a Paw" width="800" height="1000" fetchpriority="high">
+            <img class="gift-art" src="https://luna.nodesk.tech/brand/add-a-paw/hero-gift.webp" alt="Add a Paw portrait presented as a gift" width="500" height="500">
+          </div>
+          <p class="art-caption">Design examples. Final physical finish is not confirmed by these images.</p>
+        </div>
+      </section>
+      <div class="promise"><p>They already rule the house.<br>Make it official.</p><span>A familiar face is the starting point.<br>The portrait should still feel unmistakably like them.</span></div>
+      <section id="how-it-works" aria-labelledby="steps-title">
+        <p class="eyebrow">Start with a little curiosity</p>
+        <h2 id="steps-title">From their photo to your idea.</h2>
+        <p class="section-intro">Browse before you decide. Here is what to consider as you explore a portrait.</p>
+        <div class="steps">
+          <article class="step"><span class="step-number" aria-hidden="true">01</span><h3>Find their look.</h3><p>Explore the portrait themes on Add a Paw. Choose a style that suits their personality and your space.</p></article>
+          <article class="step"><span class="step-number" aria-hidden="true">02</span><h3>Choose a clear photo.</h3><p>Look for good light and a clear view of their face and markings. Keep the details that make them, them.</p></article>
+          <article class="step"><span class="step-number" aria-hidden="true">03</span><h3>Consider the finished piece.</h3><p>Explore the design first. Physical sizes, materials, prices and delivery need confirmation before ordering opens.</p></article>
+        </div>
+      </section>
+      <section class="expectations" aria-labelledby="expectations-title">
+        <div><p class="eyebrow">Before you begin</p><h2 id="expectations-title">A design idea.<br>A different kind of decision.</h2><p>A digital preview helps you explore a look. Choosing a physical artwork needs a little more information.</p></div>
+        <div>
+          <div class="expectation-item"><h3>Today: explore the design preview</h3><p>Browse portrait styles before making a decision about a physical artwork. A design preview and a finished print are different things.</p></div>
+          <div class="expectation-item"><h3>Physical prints: not yet open for orders</h3><p>Final print specifications, pricing and delivery options must be confirmed before a purchase can be made. A simulated image is not a physical sample.</p></div>
+        </div>
+      </section>
+      <section class="faq" aria-labelledby="faq-title">
+        <div><p class="eyebrow">A few useful answers</p><h2 id="faq-title">Before the<br>first portrait.</h2></div>
+        <div>
+          <details><summary>Can I order a physical print now?</summary><p>No. The current site is a design preview. Physical ordering, final specifications, prices and delivery options are not yet confirmed.</p></details>
+          <details><summary>What kind of photo should I choose?</summary><p>Start with a sharp, well-lit photo where your pet’s face and markings are easy to see. You can browse styles first, before selecting a photo.</p></details>
+          <details><summary>Do these images show the final print texture?</summary><p>The images here are design examples, not proof of the final physical finish. Texture and depth should be assessed using an identified physical print sample.</p></details>
+        </div>
+      </section>
+      <section class="closing" aria-labelledby="closing-title"><h2 id="closing-title">Which look is so them?</h2><p>Start with a style. Keep their personality at the centre.</p><a class="button" href="https://luna.nodesk.tech/themes">Explore portrait styles <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer><p>Add a Paw · Art, with a little of you.</p><a href="https://luna.nodesk.tech/">Visit the existing website ↗</a></footer>
+  </div>
+</body>
+</html>
