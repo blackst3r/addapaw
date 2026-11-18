@@ -1,0 +1,283 @@
+.studio-main {
+  padding-block: clamp(1.75rem, 5vw, 4.25rem);
+}
+.studio-intro h1 {
+  margin: 0 0 .55rem;
+  font-size: clamp(2.5rem, 6vw, 4.7rem);
+  line-height: 1.1;
+  letter-spacing: -.045em;
+}
+.studio-main h2 {
+  margin: 0 0 .65rem;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  line-height: 1.2;
+}
+.studio-main p {
+  margin: 0 0 1rem;
+  max-width: 58ch;
+  line-height: 1.55;
+}
+.studio-grid {
+  display: grid;
+  grid-template-columns: minmax(200px, .75fr) minmax(0, 1.3fr);
+  align-items: start;
+  gap: clamp(1.75rem, 5vw, 5rem);
+  margin-top: clamp(1.5rem, 3vw, 2.75rem);
+}
+.style-panel {
+  overflow: hidden;
+  border: 1px solid #ddcdbd;
+  border-radius: .8rem;
+  background: #f4ece1;
+}
+.style-visual:has(img[hidden]) {
+  display: none;
+}
+.style-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #e5d9ca;
+}
+.style-body {
+  display: grid;
+  gap: .6rem;
+  padding: 1.25rem;
+}
+.style-body label {
+  font-size: .83rem;
+  font-weight: 700;
+  color: #664c3b;
+}
+.style-body select {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  font: inherit;
+  color: #402d23;
+  background: #fffcf7;
+  border: 1px solid #b9a28e;
+  border-radius: .3rem;
+  padding: .45rem .55rem;
+}
+.style-body a, .file-caption button {
+  justify-self: start;
+  font-size: .88rem;
+}
+.live-section {
+  border-top: 1px solid #ddcdbd;
+  margin-top: 1.6rem;
+  padding-top: 1.5rem;
+}
+.studio-main .quota-note {
+  margin: .65rem 0 0;
+  color: #6a584a;
+  font-size: .82rem;
+}
+.photo-drop {
+  position: relative;
+  display: grid;
+  gap: .45rem;
+  padding: 1.5rem .85rem;
+  justify-items: center;
+  border: 1.5px dashed #a78d76;
+  border-radius: .65rem;
+  text-align: center;
+}
+.photo-drop:focus-within, .photo-drop.is-dragging {
+  outline: 3px solid #8d4527;
+  outline-offset: 3px;
+  background: #f5ebdf;
+}
+.photo-drop label {
+  display: inline-flex;
+  gap: .65rem;
+  align-items: center;
+  font-weight: 700;
+  color: #7a3924;
+}
+.photo-drop input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.photo-drop small {
+  font-size: .8rem;
+  color: #635447;
+}
+.upload-symbol {
+  font: 1.5rem/1 Georgia, serif;
+}
+.studio-main .file-error {
+  margin: .55rem 0 0;
+  color: #8c302b;
+}
+.file-preview {
+  margin-top: 1rem;
+}
+.file-preview img {
+  width: 100%;
+  height: min(46vw, 330px);
+  object-fit: contain;
+  background: #eee5d9;
+  border-radius: .5rem;
+}
+.file-caption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-block: .55rem;
+}
+.file-caption span {
+  font-size: .8rem;
+  overflow-wrap: anywhere;
+}
+.file-caption button {
+  background: none;
+  border: 0;
+  color: #7a3924;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+.guide-section {
+  margin-block: clamp(2rem, 6vw, 4.5rem) 1rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid #ddcdbd;
+}
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(.5rem, 2vw, 1rem);
+  max-width: 520px;
+  margin-block: 1.2rem;
+}
+.guide-grid figure {
+  margin: 0;
+}
+.guide-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: .5rem;
+}
+.guide-grid figcaption, .style-body p {
+  margin: .45rem 0 0;
+  font-size: .9rem;
+}
+.guide-section details {
+  max-width: 580px;
+}
+.guide-section summary {
+  width: fit-content;
+  padding-block: .6rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.studio-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.studio-page [hidden] {
+  display: none;
+}
+.studio-example {
+  border-block: 1px solid #ddcdbd;
+  margin-top: clamp(2rem, 5vw, 4rem);
+}
+.studio-example summary {
+  cursor: pointer;
+  padding-block: 1.25rem;
+  color: #733c28;
+  font: 1.24rem/1.3 Baskerville, Georgia, serif;
+}
+.example-content {
+  padding-bottom: 1.7rem;
+}
+.example-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: min(3vw, 1rem);
+  max-width: 680px;
+  margin-bottom: 1rem;
+}
+.example-pair img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  background: #eee5d9;
+  object-fit: contain;
+  border-radius: .375rem;
+}
+.example-pair figcaption {
+  margin-top: .35rem;
+  font-size: .85rem;
+}
+.example-size {
+  display: inline-block;
+  color: var(--muted);
+  font-size: .8rem;
+  margin-left: .35rem;
+}
+.example-revision {
+  margin-top: 1.1rem;
+  border-top: 1px solid var(--line);
+  max-width: 680px;
+}
+.example-revision summary {
+  font: 600 .97rem/1.45 Roboto, Arial, sans-serif;
+  padding-block: .85rem;
+}
+.example-revision figure {
+  display: grid;
+  grid-template-columns: minmax(110px, 35%) 1fr;
+  gap: clamp(.9rem, 2vw, 1.5rem);
+}
+.example-revision img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: .35rem;
+}
+.example-revision p {
+  margin-top: .4rem;
+}
+@media (max-width: 650px) {
+  .studio-grid {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+    margin-top: 1.25rem;
+  }
+  .live-section {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  .style-panel {
+    display: flex;
+    gap: .85rem;
+    align-items: center;
+    padding: .75rem;
+  }
+  .style-visual img {
+    width: clamp(68px, 22vw, 100px);
+    height: auto;
+    border-radius: .3rem;
+  }
+  .style-body {
+    flex: 1;
+    min-width: 0;
+    gap: .35rem;
+    padding: 0;
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "verifiedOn": "2026-11-18",
+  "guide": "https://luna.nodesk.tech/how-it-works",
+  "catalog": "https://luna.nodesk.tech/api/creation/site",
+  "release": "b2160b9e2cc17c9b5c9c28943c83931a214cc557e62b10d35aef4aeb756d195b",
+  "usage": "The uploaded photo and its first actual Winter Garden digital portrait form the studio example. Both the full views and details show this same kitten. The three style references show separate pets. The studio example has no customer review.",
+  "assets": [
+    {
+      "file": "kitten-photo.webp",
+      "source": "https://luna.nodesk.tech/brand/add-a-paw/guide-examples/winter-garden-kitten-photo.webp",
+      "use": "Studio photo example",
+      "width": 640,
+      "height": 800,
+      "sourceCrop": [
+        144,
+        18,
+        975,
+        1057
+      ],
+      "sha256": "92daacca71cebe3f555b1f66334967907d31e794a06d26d8a4013dd4c168cb52"
+    },
+    {
+      "file": "naval-admiral.webp",
+      "source": "https://luna.nodesk.tech/api/creation/site/b2160b9e2cc17c9b5c9c28943c83931a214cc557e62b10d35aef4aeb756d195b/preview?path=references%2Ffilter-F05-d499e5543481c26ce39119687b53d61d37c1e3077f76b0435449b39d6f76c942.webp",
+      "use": "Official style reference",
+      "width": 540,
+      "height": 720,
+      "style": "F05",
+      "sha256": "94ee1e32594c2383e08cbb504afbb43a180f7c76c4a7231c334a76a283e3b4e6"
+    },
+    {
+      "file": "floral-garden-queen.webp",
+      "source": "https://luna.nodesk.tech/api/creation/site/b2160b9e2cc17c9b5c9c28943c83931a214cc557e62b10d35aef4aeb756d195b/preview?path=references%2Ffilter-F08-2cc427089429865eac84d35a95687b3de36eed51be908ffe490e27071cdf1a42.webp",
+      "use": "Official style reference",
+      "width": 540,
+      "height": 720,
+      "style": "F08",
+      "sha256": "b50e5069ea302badddd133af9c1d8e0071276c50b71d3f0b6a11efa668ec3b00"
+    },
+    {
+      "file": "cupcake-sneak.webp",
+      "source": "https://luna.nodesk.tech/api/creation/site/b2160b9e2cc17c9b5c9c28943c83931a214cc557e62b10d35aef4aeb756d195b/preview?path=references%2Ffilter-oddly-cute-cupcake-sneak-82832256f231ec6feb98907c321c98629355e15f709c7e66e5667ca16ff6bb01.webp",
+      "use": "Official style reference",
+      "width": 514,
+      "height": 720,
+      "style": "oddly-cute-cupcake-sneak",
+      "sha256": "131bb128e4a030bbdcffb57b6df80e516fb26659da8215f5cc628dfbbafd6792"
+    },
+    {
+      "file": "upload-clear.webp",
+      "source": "https://luna.nodesk.tech/brand/add-a-paw/product-guides/photo-guide-mobile.webp",
+      "use": "Clear and well lit · studio guide illustration",
+      "sourceCrop": [
+        58,
+        75,
+        304,
+        276
+      ],
+      "width": 246,
+      "height": 201,
+      "sha256": "2c3523999e68d5094713e0b37cc66a823cb442300de49e8a68538778997d60be"
+    },
+    {
+      "file": "upload-blurry.webp",
+      "source": "https://luna.nodesk.tech/brand/add-a-paw/product-guides/photo-guide-mobile.webp",
+      "use": "Too blurry · studio guide illustration",
+      "sourceCrop": [
+        335,
+        75,
+        581,
+        276
+      ],
+      "width": 246,
+      "height": 201,
+      "sha256": "ae057e4bfb710a2b069659fb1b9d674d7f90c04456cd079283b251c592e0d1a0"
+    },
+    {
+      "file": "kitten-portrait.webp",
+      "source": "studioRun.output",
+      "use": "Actual digital portrait · first studio preview",
+      "width": 640,
+      "height": 800,
+      "sourceCrop": [
+        200,
+        296,
+        1576,
+        2016
+      ],
+      "style": "classical-festive-winter-snow",
+      "sha256": "b99c1c573a12e89f60214abdd83b1e3215f98ad071dd12fed1cace772d44941a"
+    },
+    {
+      "file": "kitten-photo-detail.webp",
+      "source": "studioRun.input",
+      "use": "Detail of the exact studio upload",
+      "width": 395,
+      "height": 395,
+      "sourceCrop": [
+        105,
+        31,
+        500,
+        426
+      ],
+      "sha256": "8b6d73567925a371be73b499e60e39623436af0cfc519f9ac6376eb041c0f9f3"
+    },
+    {
+      "file": "kitten-portrait-detail.webp",
+      "source": "studioRun.output",
+      "use": "Detail of the downloaded digital portrait",
+      "width": 480,
+      "height": 480,
+      "sourceCrop": [
+        460,
+        445,
+        1290,
+        1275
+      ],
+      "style": "classical-festive-winter-snow",
+      "sha256": "d1eea4679c500d6b34f25ab15b374aa4c0ccfe8bb9cb93e52d795cab7f407c20"
+    }
+  ],
+  "studioRun": {
+    "date": "2026-11-18",
+    "site": "https://luna.nodesk.tech",
+    "styleId": "classical-festive-winter-snow",
+    "input": {
+      "file": "kitten-photo.webp",
+      "sha256": "92daacca71cebe3f555b1f66334967907d31e794a06d26d8a4013dd4c168cb52",
+      "dimensions": [
+        640,
+        800
+      ]
+    },
+    "output": {
+      "evidenceFile": "qa-flow/studio-winter-portrait.png",
+      "sha256": "24525c765e5c833dd4eb853eeae40aec9cba72187e57f614571cdd04030b4710",
+      "dimensions": [
+        1728,
+        2304
+      ],
+      "type": "First generated digital portrait downloaded from the studio interface"
+    },
+    "captureEvidence": [
+      "qa-flow/03-upload.png",
+      "qa-flow/04-photo-selected.png",
+      "qa-flow/05-portrait.png",
+      "qa-flow/07-download.png"
+    ]
+  }
+}

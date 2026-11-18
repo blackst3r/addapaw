@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Your pet’s photo · Add a Paw</title>
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="studio.css">
+  <script src="catalog.js" defer></script>
+  <script src="events.js" defer></script>
+  <script src="studio.js" defer></script>
+</head>
+<body class="studio-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><img src="assets/wordmark.webp" alt="Add a Paw"></a>
+      <nav aria-label="Main navigation"><a href="styles.html">Portrait styles</a><a href="craft.html">Textured prints</a></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap studio-main">
+    <div class="studio-intro">
+      <h1>Add their photo.</h1>
+      <p>A clear view of their eyes and markings makes a good starting point.</p>
+    </div>
+    <div class="studio-grid">
+      <section class="style-panel" aria-labelledby="style-title">
+        <div class="style-visual"><img id="style-image" src="assets/kitten-portrait.webp" alt="Kitten portrait in the Winter Garden style" width="600" height="600"></div>
+        <div class="style-body">
+          <label for="style-picker" id="style-title">Your portrait style</label>
+          <select id="style-picker">
+            <option value="classical-festive-winter-snow">Waiting in the Winter Garden</option>
+            <option value="F05">Naval Admiral</option>
+            <option value="F08">Floral Garden Queen</option>
+            <option value="oddly-cute-cupcake-sneak">Cupcake Sneak</option>
+          </select>
+          <a class="textlink" href="styles.html">Browse the style gallery →</a>
+          <p id="style-notice" role="status" hidden></p>
+        </div>
+      </section>
+      <div class="photo-panel">
+        <section id="photo-check" aria-labelledby="check-title" hidden>
+          <h2 id="check-title">Check your photo</h2>
+          <p>This optional check stays on your device. You’ll choose the original file in the live studio when you’re ready to create.</p>
+          <div class="photo-drop" id="photo-drop">
+            <input type="file" id="photo-file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" aria-describedby="file-rules">
+            <label for="photo-file"><span class="upload-symbol" aria-hidden="true">↑</span><span id="pick-text">Choose a pet photo</span></label>
+            <small id="file-rules">Or drop one here · JPG, PNG or WebP · up to 10 MB</small>
+          </div>
+          <p id="file-error" class="file-error" role="alert"></p>
+          <div id="file-preview" class="file-preview" hidden>
+            <img id="pet-photo" alt="Your selected pet photo" width="560" height="390">
+            <div class="file-caption"><span id="file-meta"></span><button type="button" id="remove-photo" class="textlink">Remove photo</button></div>
+            <p>Check that the eyes look sharp and the ears have room around them.</p>
+          </div>
+          <p id="file-status" role="status" class="studio-sr"></p>
+        </section>
+        <section class="live-section" aria-labelledby="create-title">
+          <h2 class="studio-sr" id="create-title">Create your free portrait</h2>
+          <a id="live-studio" class="btn" href="https://luna.nodesk.tech/themes">Open live studio ↗</a>
+          <p class="quota-note">You can go straight to the live studio. Select <strong>Continue</strong> on its print-options screen to add your photo. Digital preview and download are free. Daily preview limits apply.</p>
+        </section>
+        <noscript><p>Open the live studio to choose a style and add your photo. Enable JavaScript to use the optional photo check.</p></noscript>
+      </div>
+    </div>
+    <details class="studio-example" id="studio-example">
+      <summary>Explore the studio example</summary>
+      <div class="example-content">
+        <h2>A kitten in the Winter Garden</h2>
+        <p>Compare the kitten’s white muzzle and forehead markings with the original photo. You can download the full composition of this first portrait.</p>
+        <div class="example-pair">
+          <figure><img src="assets/kitten-photo.webp" alt="Original studio photo of a gray and white kitten with a pink nose" loading="lazy"><figcaption>Original photo</figcaption></figure>
+          <figure><img src="assets/example-first.webp" alt="First Winter Garden portrait of the same kitten" width="960" height="1280" loading="lazy"><figcaption>First digital portrait</figcaption></figure>
+        </div>
+        <a id="example-download" class="textlink" href="assets/example-first.webp" download="Add-a-Paw-Winter-Garden-first.webp">Download example · WebP</a>
+        <span class="example-size">960 × 1280 · 472 KB</span>
+        <details class="example-revision">
+          <summary>See the refinement step</summary>
+          <figure>
+            <img src="assets/example-refinement-screen.webp" width="520" height="1125" alt="Mobile studio review screen showing part of the second Winter Garden portrait and its saved title" loading="lazy">
+            <figcaption><strong>Studio screenshot · Second round</strong><p>We asked to soften the trees behind the kitten and keep its face, markings and coat unchanged. The studio saved a second version titled <em>Kitten in Softened Snow Haze</em>.</p></figcaption>
+          </figure>
+        </details>
+      </div>
+    </details>
+    <section class="guide-section" aria-labelledby="guide-title">
+      <h2 id="guide-title">Which photo should I choose?</h2>
+      <div class="guide-grid">
+        <figure><img src="assets/upload-clear.webp" width="280" height="220" alt="Clear example of a pet’s face" loading="lazy"><figcaption>Clear eyes and visible markings</figcaption></figure>
+        <figure><img src="assets/upload-blurry.webp" width="280" height="220" alt="Blurred pet photo for comparison" loading="lazy"><figcaption>Blur can hide their features</figcaption></figure>
+      </div>
+      <details><summary>More photo tips</summary><p>Use a clear original in soft daylight, leave space around the ears and keep special markings in the shot. For older photos, pick the one where you can see their face best.</p><a href="https://luna.nodesk.tech/photo-guide">Full photo guide ↗</a></details>
+    </section>
+  </main>
+</body>
+</html>
