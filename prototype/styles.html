@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Choose a portrait style for your cat or dog and start a free digital preview from your photo.">
+  <title>Browse portrait styles · Add a Paw</title>
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="catalog.js" defer></script>
+  <script src="styles.js" defer></script>
+  <script src="events.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top"><div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/wordmark.webp" alt="Add a Paw"></a>
+    <nav aria-label="Main"><a href="styles.html" aria-current="page">Portrait styles</a><a class="wide" href="index.html#how">How it works</a><a href="craft.html">Textured prints</a></nav>
+  </div></header>
+  <main class="library wrap" id="main">
+    <h1>Find their portrait style.</h1>
+    <p class="library-intro">Pick a look for your cat or dog. You'll add their photo next.</p>
+    <form id="library-filters" action="styles.html" method="get">
+      <div class="library-search"><label for="style-search">Search styles</label><input id="style-search" type="search" name="q" autocomplete="off" placeholder="Try floral, admiral or winter"></div>
+      <div class="library-collection"><label for="style-theme">Collection</label>
+        <select id="style-theme" name="series"><option value="">All collections</option><option value="royalty">Royalty</option><option value="zodiac">Zodiac</option><option value="oddly-cute">Oddly Cute</option><option value="festive">Festive</option><option value="memory">In Memory</option></select>
+      </div>
+    </form>
+    <div class="library-status"><p id="style-count" role="status"></p><a id="memory-link" href="styles.html?series=memory">Browse memorial portraits</a></div>
+    <div class="library-grid" id="library-grid"></div>
+    <p class="library-empty" id="library-empty" hidden>No styles match your search. <a href="styles.html" id="clear-filters">Show all styles</a></p>
+    <noscript><p><a href="https://luna.nodesk.tech/themes">Browse the full collection on Add a Paw</a></p></noscript>
+  </main>
+</body>
+</html>
